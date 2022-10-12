@@ -1,13 +1,123 @@
 /* GENERIC */
 html {
-  scroll-behavior: smooth;
+  background-position: right 45px bottom 20px !important; /* background image position */
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #929292;
+  --text-color: #fff;
+  --main-color: #53b3cb;
+  --second-color: grey;
+  --other-color: #12141c;
+  --h1-font: 2.2rem;
+  --h2-font: 1.5rem;
+  --p-font: 0.1rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border-bottom: 1 solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu-icon{
+  color: #12141c;
+  font-size: 36px;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+
+nav {
+  height: 100px;
+  background: transparent !important;
+  width: 100%;
+  padding: 0 10px;
+  max-width: 1295px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
 
 a {
   text-decoration: none;
   position: relative;
   color: black;
+}
+
+section {
+  padding: 160px 16% 90px;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url(../images/hero.jpg) no-repeat center center/cover;
+  background-size: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-text h1 {
+  margin: 20px;
+  font-size: var(--h1-font);
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+span {
+  color: var(--other-color);
+  background: linear-gradient(45deg, #48ff00, #00ffd5, #831d35, #002bff, #53b3cb);
+  padding: 0 5px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.home-text h2 {
+  margin: 20px;
+  font-size: var(--h2-font);
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+#hire {
+  background: var(--main-color);
+  padding: 0 4px;
+}
+
+#hire:hover {
+  background: var(--main-color);
+  color: var(--other-color);
 }
 
 .link__hover-effect:after {
@@ -40,8 +150,6 @@ li {
   margin: 0 0.5rem;
 }
 
-header
-
 
 .personal__logo {
   font-family: 'Aboreto', cursive;
@@ -71,23 +179,7 @@ header
   padding: 0 12px;
 }
 
-nav {
-  height: 100px;
-  background: transparent !important;
-  width: 100%;
-  padding: 0 10px;
-  max-width: 1295px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
+
 
 
 section:nth-child(even) {
@@ -138,7 +230,79 @@ section:nth-child(even) {
 
 }
 
+#contact {
+  background-color: #53b3cb;
+  color: #fff;
+  padding: 10px 27px;
+}
 
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #53b3cb;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000, #53b3cb);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color:#53b3cb;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#53b3cb;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.name {
+  background-color: #53b3cb;
+  color: #fff;
+  padding: 10px 27px;
+  border-radius: 10px;
+
+}
 
 /* HERO SECTION */
 
