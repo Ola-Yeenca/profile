@@ -39,6 +39,13 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
+header.sticky {
+  padding: 10px 4%;
+  background: var(--bg-color);
+  border-bottom: 1 solid var(--main-color);
+  transition: all 0.3s ease-in-out;
+}
+
 #menu-icon{
   color: #12141c;
   font-size: 36px;
@@ -48,7 +55,7 @@ header {
 }
 
 nav {
-  height: 100px;
+  height: 70px;
   background: transparent !important;
   width: 100%;
   padding: 0 10px;
@@ -79,7 +86,7 @@ section {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url(../images/hero.jpg) no-repeat center center/cover;
+  background: url(../images/hero.png) no-repeat center center/cover;
   background-size: auto;
   display: flex;
   align-items: center;
@@ -116,17 +123,28 @@ span {
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: 2px;
+  margin-bottom: 3rem;
 }
 
 #hire {
   background: var(--main-color);
   padding: 0 4px;
+  border-radius: 0.5rem;
 }
 
 #hire:hover {
   background: var(--main-color);
   color: var(--other-color);
 }
+
+.about {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+
 
 .link__hover-effect:after {
   content: "";
