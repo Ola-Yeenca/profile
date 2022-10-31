@@ -180,7 +180,9 @@ section {
   position: relative;
   background-image: var(--bg-color-linear);
   background-size: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
   align-items: center;
   justify-content: flex-start;
 }
@@ -196,10 +198,10 @@ section {
 .home-img img {
   height: auto;
   width: 100%;
-  max-width: 660px;
+  max-width: 560px;
   position: absolute;
-  right: 0;
-  bottom: 20;
+  right: 30px;
+  top: 30px;
 }
 
 span {
