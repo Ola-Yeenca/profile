@@ -63,7 +63,6 @@ body {
 
 span {
   color: var(--other-color);
-  background: #53b3cb;
   padding: 0 5px;
   border-radius: 5px;
   position: absolute;
@@ -129,6 +128,56 @@ span {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+/* ANIMATION */
+
+@keyframes animate-img {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-waves {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.wave {
+  animation: animate-waves 1000ms linear infinite;
 }
 
 /* NAVBAR */
@@ -203,6 +252,14 @@ section {
 }
 
 .home-text {
+  animation: fade-up 650ms 400ms backwards;
+}
+
+.name {
+  
+  /* font-weight: 700; */
+  color: var(--main-color);
+  /* margin-bottom: 5px; */
 }
 
 .home-text h1 {
@@ -227,57 +284,19 @@ section {
   max-width: 660px;
 }
 
-
-/* .home {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background-size: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
-  justify-content: flex-start;
-} */
-
-/* .home-text h1 {
-  margin: 20px;
-  font-size: var(--h1-font);
-  font-weight: bold;
-  line-height: 1.1;
-  letter-spacing: 2px;
+.about__me--title {
+  animation: fade-up 650ms 400ms backwards;
 }
 
-.home-img img {
-  height: auto;
-  width: 100%;
-  max-width: 560px;
-  position: absolute;
-  right: 30px;
-  top: 30px;
+.home-img {
+  animation: animate-home-img 800ms 200ms backwards;
 }
-
-.home-text h2 {
-  margin: 20px;
-  font-size: var(--h2-font);
-  font-weight: bold;
-  line-height: 1.1;
-  letter-spacing: 2px;
-}
-
-.home-text p {
-  margin: 20px;
-  font-size: var(--p-font);
-  font-weight: bold;
-  line-height: 1.1;
-  letter-spacing: 2px;
-  margin-bottom: 3rem;
-} */
 
 #hire {
   background: var(--main-color);
   padding: 10px 27px;;
   border-radius: 0.5rem;
+  animation: fade-up 950ms 600ms backwards;
 }
 
 #hire:hover {
@@ -332,6 +351,7 @@ section {
   height: auto;
   width: 100%;
   max-width: 260px;
+  animation: animate-home-img 800ms 200ms backwards;
 }
 
 #contact-me {
@@ -402,7 +422,7 @@ li {
 .skills {
   display: grid;
   justify-content: center;
-
+  animation: fade-in 1500ms 600ms backwards;
 }
 
 .skill--title {
@@ -495,6 +515,7 @@ li {
   height: auto;
   width: 100%;
   max-width: 460px;
+  animation: animate-home-img 800ms 400ms backwards;
 }
 
 .project__wrapper {
