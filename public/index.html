@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ola Yinka</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/public/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aboreto&family=Josefin+Sans:ital,wght@0,200;1,300;1,400&family=Lato:wght@700&family=Poppins&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <script src="https://kit.fontawesome.com/0d9134a70b.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/x-icon" href="/images/Timothy's Resume.pdf">
 </head>
 <body>
@@ -38,9 +38,6 @@
 
 <section class="home" id="home">
   <div class="home-text">
-    <div class="home-img">
-      <img src="/images/aminated-1.png" alt="me">
-    </div>
     <h1>Hi, I'm
       <span>Timothy 👋🏾</span></h1>
     <h2>a Full Stack Web Developer</h2>
@@ -48,17 +45,22 @@
       I'm currently looking for a job as a junior web developer.</p>
     <a href="#hire" class="glow-on-hover" id="hire">Hire Me</a>
   </div>
+
+  <div class="home-img">
+    <img src="/images/aminated-1.png" alt="aminated image">
+  </div>
 </section>
 
 <section class="about" id="about">
   <div class="about-img">
-    <img src="/images/animated-2-dark.png" alt="Timothy">
+    <img src="/images/animated-2-dark.png" alt="aminated image">
   </div>
 
   <div class="about-text">
     <h2>About Me</h2>
     <h4>My name is Timothy Olaonipekun Omoniyi.</h4>
-      <p>Transitioning into the tech world in 2022, I fell in love with Python programming language (still in progress), learning at home with Udemy
+      <p>
+        Transitioning into the tech world in 2022, I fell in love with Python programming language (still in progress), learning at home with Udemy
         and other online resources which then led me to Le Wagon Bootcamp. At Le Wagon Barcelona completed my program as a Full stack Developer.
         I learnt and worked on some cool projects there as a group/team and currently working on some personal projects too.
       </p>
@@ -91,11 +93,134 @@
 </section>
 
 <section class="skills" id="skills">
-  <div class="main-text">
+  <div class="skills-text">
     <h2>My Skills</h2>
-    <h4>Here are few technologies I've been learning and working with...</h4>
+    <h4>Here are some technologies I have been working learning and working with so far...</h4>
   </div>
-  <div class="skill"></div>
+
+  <div class="skills__img--wrapper">
+    <div class="skills-img">
+      <img src="/images/html.png" alt="HTML">
+      <h2 class="skill--title">HTML</h2>
+    </div>
+
+    <div class="skills-img">
+      <img src="/images/css3.png" alt="CSS">
+      <h2 class="skill--title">CSS</h2>
+    </div>
+
+    <div class="skills-img">
+      <img src="/images/javascript-logo.png" alt="javascript">
+      <h2 class="skill--title">JAVASCRIPT</h2>
+    </div>
+
+    <div class="skills-img">
+      <img src="/images/python-logo.png" alt="python">
+      <h2 class="skill--title">PYTHON</h2>
+    </div>
+
+    <div class="skills-img">
+      <img src="/images/ruby-logo.png" alt="ruby on rails">
+      <h2 class="skill--title">RUBY ON RAILS</h2>
+    </div>
+
+    <div class="skills-img">
+      <img src="/images/bootstrap-framework-logo.png" alt="bootstrap">
+      <h2 class="skill--title">BOOTSTRAP</h2>
+    </div>
+
+    <div class="skills-img">
+      <img src="/images/tailwind-css.png" alt="tailwind-css">
+      <h2 class="skill--title">TAILWIND</h2>
+    </div>
+
+    <div class="skills-img">
+      <img src="/images/github.png" alt="Github">
+      <h2 class="skill--title">GITHUB</h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="projects" id="projects">
+  <div class="projects-gri">
+    <div class="project-text">
+      <h2>Projects</h2>
+      <h4>Here are some of my projects I have worked on so far...</h4>
+    </div>
+
+    <div class="project-img">
+      <img src="/images/office.png" alt="Office image">
+    </div>
+  </div>
+
+  <ul class="project__list">
+    <li class="project">
+      <div class="project__wrapper">
+        <img src="/images/AirOffice.png" alt="AirOffice" class="project__img">
+        <div class="project__description">
+          <h3 class="project__description--title">Air Office Project</h3>
+          <h4 class="project__description--sub-title">
+            HTML, CSS, JAVASCRIPT, RUBY ON RAILS & BOOTSTRAP
+          </h4>
+          <p class="project__description--para">
+            Air office just like AirBnB provide an affordable, convenient and unique way to find a place to work
+            while you are away from home and exploring your new city or town. Whether you are looking for a
+            place to share your next big meeting or need somewhere that feels just like Office while you are in a new city or town,
+            Air office can help.
+          </p>
+          <div class="project__description--links">
+            <a href="https://github.com/Ola-Yeenca/air_office" target="_blank" class="project__description--link fa-brands fa-github"></a>
+            <a href="https://airoffice-almaya.herokuapp.com/" target="_blank" class="project__description--link fa-solid fa-link"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <ul class="project__list">
+    <li class="project">
+      <div class="project__wrapper">
+        <img src="/images/StudyFlow.png" alt="StudyFlow" class="project__img">
+        <div class="project__description">
+          <h3 class="project__description--title">StudyFlow Project</h3>
+          <h4 class="project__description--sub-title">
+            HTML, CSS, JAVASCRIPT, RUBY ON RAILS & BOOTSTRAP
+          </h4>
+          <p class="project__description--para">
+            StudyFlow is a web-based application designed to help users manage their schoolwork.
+            The app allows users to create and track their assignments, set deadlines, and receive reminders.
+            It also offers a variety of features to help users stay organized, including a calendar, to-do list, and notes.
+          </p>
+          <div class="project__description--links">
+            <a href="https://github.com/Ola-Yeenca/studyflow" target="_blank" class="project__description--link fa-brands fa-github"></a>
+            <a href="https://study-flow.herokuapp.com" target="_blank" class="project__description--link fa-solid fa-link"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <ul class="project__list">
+    <li class="project">
+      <div class="project__wrapper">
+        <img src="/images/—Pngtree—error 404 under construction sign_7382633.png" alt="under construction" class="project__img">
+        <div class="project__description">
+          <h3 class="project__description--title">Chat Box</h3>
+          <h4 class="project__description--sub-title">
+            PYTHON
+          </h4>
+          <p class="project__description--para">
+            Chat Box is a simple chat application that allows users to send and receive messages in real time.
+            It is built using Python... error 404: can't load more description now as it's under construction,
+            please stay TUNED!
+          </p>
+          <div class="project__description--links">
+            <a href="https://github.com/Ola-Yeenca" target="_blank" class="project__description--link fa-brands fa-github"></a>
+            <a href="#" target="_blank" class="project__description--link fa-solid fa-link"></a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
 </section>
 
   <footer>
@@ -106,7 +231,7 @@
           </figure>
           <span class="footer__logo--popper">
             Top
-            <i class="fa-sharp fa-solid fa-arrow-up-to-line"></i>
+            <i class="fas fa-arrow-up"></i>
           </span>
         </a>
         <div class="footer__social--list">
