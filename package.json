@@ -1,7 +1,7 @@
 {
   "devDependencies": {
     "source-map-loader": "^4.0.0",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.2.1"
   },
   "name": "profile",
   "version": "1.0.0",
@@ -18,7 +18,7 @@
     "chokidar": "^3.5.3",
     "color-name": "^1.1.4",
     "cssesc": "^3.0.0",
-    "daisyui": "^2.31.0",
+    "daisyui": "^2.38.0",
     "defined": "^1.0.0",
     "detective": "^5.2.1",
     "didyoumean": "^1.2.2",
@@ -40,6 +40,7 @@
     "micromatch": "^4.0.5",
     "minimist": "^1.2.6",
     "nanoid": "^3.3.4",
+    "node.js": "^0.0.1-security",
     "normalize-path": "^3.0.0",
     "object-hash": "^3.0.0",
     "path-parse": "^1.0.7",

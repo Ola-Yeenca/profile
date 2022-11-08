@@ -16,19 +16,22 @@
 
 
 <header class="sticky">
-  <nav>
+  <nav class="nav">
     <div class="logo">
       <a href="index.html">
         <img src="/images/LogoSample_ByTailorBrands_clipdrop-background-removal.png" alt="logo" height="80px" max-height="80px" width="auto" >
       </a>
     </div>
-    <div class="bx bx-menu" id="menu-icon"></div>
+    <div id="menu-icon">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact" id="contact" class="glow-on-hover">Contact</a></li>
+      <li><a href="#contact" id="contact_nav" class="glow-on-hover">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -45,9 +48,35 @@
   </div>
 
   <div class="home-img">
-    <img src="/images/aminated-1.png" alt="aminated image">
+    <img src="/images/animated-2-dark.png" alt="aminated image">
+  </div>
+
+  <div class="home-gri">
+    <div class="home-in">
+      <h5>1. Problem Solver</h5>
+    </div>
+    <div class="home-in">
+      <h5>2. Team Player</h5>
+    </div>
+    <div class="home-in">
+      <h5>3. Open to Learning</h5>
+    </div>
+    <div class="home-in">
+      <h5>4. Self Motivated</h5>
+    </div>
+    <div class="home-in">
+      <h5>5. Good Communicator</h5>
+    </div>
+    <div class="home-in">
+      <h5>6. Creative Thinker</h5>
+    </div>
+
+    <div>
+      <a href="#contact" class="glow-on-hover" id="contact-me">Contact Me</a>
+    </div>
   </div>
 </section>
+
 
 <section class="about" id="about">
   <div class="about-img">
@@ -221,6 +250,24 @@
   </ul>
 </section>
 
+<section class="contact" id="contact">
+  <div class="contact-text">
+    <h2>Contact or Hire Me</h2>
+    <h4>Employ me in your team...</h4>
+      <p> Let's work together on some amazing project, help me grow, teach and guide me.
+        I am always open to new opportunities and challenges. </p>
+
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xnqoqzjy" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+  </div>
+</section>
+
   <footer>
       <div class="row footer__row">
         <a href="#" class="footer__anchor">
@@ -269,7 +316,10 @@
           <p class="footer__copyright--text">Copyright © 2022 Timothy Ola Omoniyi </p>
         </div>
       </div>
-    </footer>
+  </footer>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <script src="/public/script.js"></script>
 </body>
